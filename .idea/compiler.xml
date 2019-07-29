@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="eurekaserver" />
+        <module name="third-part-index-data-project" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="testChildProject" target="1.7" />
+      <module name="thirdPartIndexDataProject" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
