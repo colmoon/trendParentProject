@@ -9,19 +9,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-/**
- * @ClassName IndexService
- * @Description TODO
- * @Author wuxiaojian
- * @Date 2019/8/19 19:44
- * @Version 1.0
- **/
-
 @Service
 public class IndexService {
     private List<Index> indexes;
-    @Autowired
-    RestTemplate restTemplate;
+    @Autowired RestTemplate restTemplate;
 
     public List<Index> fetch_indexes_from_third_part(){
         List<Map> temp= restTemplate.getForObject("http://127.0.0.1:8090/indexes/codes.json",List.class);
