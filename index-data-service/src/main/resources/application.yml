@@ -4,4 +4,4 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
 spring:
   application:
-    name: index-gather-store-service
+    name: index-data-service
